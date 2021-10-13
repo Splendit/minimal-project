@@ -7,6 +7,20 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>A simple Java Maven Project</name>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jmp.version>3.8.0</jmp.version>
+		<jmp.plugin.rpository.url>https://download.jsparrow.eu/maven2/</jmp.plugin.rpository.url>
+	</properties>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>jsparrow-maven-plugin-repository</id>
+			<name>jSparrow Plugin Repository</name>
+			<url>${jmp.plugin.rpository.url}</url>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -16,6 +30,11 @@
 				<configuration>
 					<release>11</release>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>eu.jsparrow</groupId>
+				<artifactId>jsparrow-maven-plugin</artifactId>
+				<version>${jmp.version}</version>
 			</plugin>
 		</plugins>
 	</build>
