@@ -1,0 +1,12 @@
+bin/
+target/
+.project
+.classpath
+.settings/
+*.log
+*.html
+*.json
+*.tmp
+.vscode/
+.idea/
+
