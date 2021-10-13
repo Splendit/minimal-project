@@ -1,0 +1,21 @@
+!jsparrow.config
+
+profiles:
+- name: format
+  rules:
+    - CodeFormatter
+
+rules:
+  - ArithmethicAssignment
+  - DiamondOperator
+  - LambdaToMethodReference
+  - OptionalFilter
+  - OptionalMap
+  - RemoveRedundantTypeCast
+  - RemoveCollectionAddAll
+  - UseStringJoin
+  - UseParameterizedQuery
+  - UseParameterizedLDAPQuery
+  - EscapeUserInputsInSQLQueries
+  - UseSecureRandom
+  - ReuseRandomObjects
